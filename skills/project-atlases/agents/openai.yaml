@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Atlases"
+  short_description: "Interactive HTML process and data-model atlases"
+  default_prompt: "Use $project-atlases to create or update the process and data-model atlases from the current project analysis."
