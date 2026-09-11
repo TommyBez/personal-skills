@@ -1,6 +1,8 @@
 ---
 name: project-atlases
 description: Create and maintain interactive HTML process and data-model atlases during project analysis. Use for a process atlas, workflow/state simulator, data-model atlas, or explorable E-R diagram grounded in a project's specification or implementation.
+metadata:
+  version: "1.0.0"
 ---
 
 # Project Atlases

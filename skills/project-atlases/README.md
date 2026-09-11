@@ -20,9 +20,13 @@ You can request either atlas independently. The skill provides authoring instruc
 
 ## Install
 
+Released version: [1.0.0](https://github.com/TommyBez/personal-skills/releases/tag/project-atlases-v1.0.0).
+
 ```sh
-npx skills add TommyBez/personal-skills --skill project-atlases
+npx skills add https://github.com/TommyBez/personal-skills/tree/project-atlases-v1.0.0 --skill project-atlases
 ```
+
+For the development version, use `npx skills add TommyBez/personal-skills --skill project-atlases`.
 
 See the [repository README](../../README.md#install) for agent selection and installation scope.
 

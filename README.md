@@ -68,6 +68,26 @@ npx skills update
 
 To update just one skill, append its name to the update command.
 
+## Versioning
+
+Each skill has its own `MAJOR.MINOR.PATCH` version, recorded in `metadata.version` in its `SKILL.md`. This uses the standard [Agent Skills metadata field](https://agentskills.io/specification#metadata-field).
+
+For this collection:
+
+- **Patch**: corrections and clarifications that preserve the workflow and expected outputs.
+- **Minor**: new capabilities that preserve existing usage.
+- **Major**: changes that require adapting how the skill is used or change its expected outputs incompatibly.
+
+A published version covers the entire skill directory, including its supporting resources. Each release has a Git tag named `<skill-name>-v<version>` and [release notes](https://github.com/TommyBez/personal-skills/releases). Published tags stay fixed; subsequent changes receive a new version. Repository-only documentation changes do not require a skill release.
+
+The installation commands above use the default branch, which may contain unreleased changes. To install a particular release, use its tag URL and select the skill:
+
+```sh
+npx skills add https://github.com/TommyBez/personal-skills/tree/project-atlases-v1.0.0 --skill project-atlases
+```
+
+The tag selects the snapshot; `metadata.version` labels it, rather than acting as a package-manager version constraint. To move to a different release, install from that release's tag URL. Use the untagged source and `skills update` when you want to follow ongoing development.
+
 ## Repository layout
 
 Each skill lives in its own directory under `skills/`:
