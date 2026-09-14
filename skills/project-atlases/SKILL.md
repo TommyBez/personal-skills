@@ -1,6 +1,9 @@
 ---
 name: project-atlases
-description: Create and maintain interactive HTML process and data-model atlases during project analysis. Use for a process atlas, workflow/state simulator, data-model atlas, or explorable E-R diagram grounded in a project's specification or implementation.
+description: >-
+  Use when creating or updating interactive HTML process or data-model atlases
+  from a project's specification or implementation. Not for answering a
+  single-field question or dumping a static markdown ER diagram.
 metadata:
   version: "1.0.0"
 ---
@@ -15,7 +18,7 @@ Build tools that let readers explore how a project works and examine its data mo
 - **Data-model atlas**: what each entity contains and how it relates to the others. Read [references/data-model-atlas.md](references/data-model-atlas.md).
 - For both, read both references and use consistent names and meanings. If the request concerns only one atlas, limit the work to that deliverable.
 
-During broader project analysis, suggest atlases when exploring paths or relationships helps resolve concrete questions. A simple answer about a field does not require building these artifacts.
+Only build an atlas when the user asks for one, or when exploring paths or relationships is required to answer a concrete question. A simple answer about a field does not require these artifacts.
 
 ## Establish what to represent
 
@@ -52,3 +55,9 @@ Provide keyboard-operable controls, accessible labels, and visible focus. Arrang
 Open the artifact in a browser and verify the main user journey and changed interactions. Compare content and relationships against the source; syntax checks do not establish model fidelity. Keep verification proportional rather than introducing test infrastructure solely for these HTML files.
 
 Deliver links to the files and state what was actually verified. A process simulation does not prove the backend works. Creating atlases does not imply operational schema changes, migrations, or publishing.
+
+## Done when
+
+Each requested atlas exists at a usable local path, is understandable alone (title, scope, controls), matches the sourced specification or implementation (or marks unresolved decisions), and has been checked in a browser for the main journey plus any interactions you changed.
+
+**Verify:** browser journey exercised; relationships/fields match the source (not only syntax); deliverable links named; no schema migration, publish, or live backend change was performed.
