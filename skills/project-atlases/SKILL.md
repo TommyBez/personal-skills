@@ -5,7 +5,7 @@ description: >-
   from a project's specification or implementation. Not for answering a
   single-field question or dumping a static markdown ER diagram.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Project Atlases
